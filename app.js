@@ -22,7 +22,7 @@ async function loadSampleData() {
     document.getElementById('loading').style.display = 'block';
 
     try {
-        const response = await fetch('assets/data/sample-data.json');
+        const response = await fetch('sample-data.json');
         const data = await response.json();
         healthData = data.biomarkers;
         updateDashboard();
